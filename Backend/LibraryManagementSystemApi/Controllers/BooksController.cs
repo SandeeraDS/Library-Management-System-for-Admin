@@ -58,6 +58,45 @@ namespace LibraryManagementSystemApi.Controllers
 
         }
 
+        [HttpPut]
+        public IHttpActionResult UpdateBook(int id,BookDto bookDto)
+        {
+            if (!ModelState.IsValid)
+            {
+                return BadRequest();
+            }
+
+            var bookInDb = _context.Books.SingleOrDefault(b => b.Id == id);
+            if (bookInDb == null)
+            {
+                return NotFound();
+            }
+            else
+            {
+                Mapper.Map(bookDto, bookInDb);
+                _context.SaveChanges();
+                return Ok();
+            }
+
+
+        }
+
+        [HttpDelete]
+        public IHttpActionResult DeleteBook(int id)
+        {
+            var bookInDb = _context.Books.SingleOrDefault(b => b.Id == id);
+            if (bookInDb == null)
+            {
+                return NotFound();
+            }
+            else
+            {
+                _context.Books.Remove(bookInDb);
+                _context.SaveChanges();
+                return Ok();
+            }
+        }
+
 
 
     }

@@ -12,12 +12,16 @@ namespace LibraryManagementSystemApi.App_Start
     {
 
         public MappingProfile()
-        {
-            Mapper.CreateMap<Customer, CustomerDto>();
-            Mapper.CreateMap<CustomerDto, Customer>();
 
+
+        {
+            //domain to dto
+            Mapper.CreateMap<Customer, CustomerDto>();
             Mapper.CreateMap<Book, BookDto>();
-            Mapper.CreateMap<BookDto, Book>();
+
+            //dto to domain
+            Mapper.CreateMap<BookDto, Book>().ForMember(b => b.Id, opt => opt.Ignore()); ;
+            Mapper.CreateMap<CustomerDto, Customer>().ForMember(c => c.Id, opt => opt.Ignore()); ;
         }
 
        
