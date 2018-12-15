@@ -1,5 +1,7 @@
 import React, { Component } from "react";
 import NavMain from "../../containers/Navigation-bar/NavMain";
+import CreateUser from "./CreateUser/CreateUser";
+import UserList from "./UserList/UserList";
 
 class Users extends Component {
   constructor(props) {
@@ -11,15 +13,30 @@ class Users extends Component {
       <div id="wrapper">
         <NavMain />
         <div id="page-wrapper">
-          <div class="container-fluid">
+          <div className="container-fluid">
             {/* !-- Page Heading --> */}
-            <div class="row">
-              <div class="col-lg-12">
-                <h1 class="page-header">Users Page</h1>
-                <p>This Contain All the users</p>
-                <p>can Edit,Delete,Add users</p>
+            <div className="row">
+              <div className="col-lg-12">
+              <br/>
+                <h1 className="page-header">Customers</h1>
               </div>
             </div>
+
+            <div className="row">
+              <div className="col-lg-12">
+                <CreateUser />
+                <br/>
+              </div>
+            </div>
+
+            <div className="row">
+              <div className="col-lg-12">
+                <UserList />
+              </div>
+            </div>
+
+
+
           </div>
         </div>
       </div>

@@ -8,19 +8,20 @@ class Home extends Component {
   }
   render() {
     return (
-      <div>
+      <div id="wrapper">
         <NavMain />
         <div id="page-wrapper">
-          <div class="container-fluid">
-          {/* !-- Page Heading --> */}
-                <div class="row">
-                    <div class="col-lg-12">
-                        <h1 class="page-header">
-                            Home Page of Library Management System
+          <div className="container-fluid">
+            {/* !-- Page Heading --> */}
+            <div className="row">
+              <div className="col-lg-12">
+              <br/>
+                <h1 className="page-header">
+                  Home Page of Library Management System
                         </h1>
-                        <p>This Contain important info for the admin</p>
-                    </div>
-                </div>
+                <p>This Contain important info for the admin</p>
+              </div>
+            </div>
           </div>
         </div>
       </div>
