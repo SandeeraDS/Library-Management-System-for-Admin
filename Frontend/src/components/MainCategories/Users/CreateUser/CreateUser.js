@@ -8,7 +8,7 @@ class CreateUser extends Component {
     render() {
         return (
             <div>
-                <button type="button" className="btn btn-primary">Add Customer</button>
+                <button type="button" className="btn btn-primary" onClick={this.props.clicked}>Add Customer</button>
             </div>);
     }
 }
