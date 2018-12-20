@@ -12,8 +12,15 @@ html{
 
 body {
     margin-top: 100px;
+   
+    /*	height: 100%;  */
+} 
+
+.root {
+    /* margin-top: 100px; */
+   
+    height: 100%;
     background-color: #222;
-	height: 100%;
 }
 
 @media(min-width:768px) {

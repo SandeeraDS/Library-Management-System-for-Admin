@@ -4,12 +4,12 @@ const TopMenuItems = () => {
   return (
     <ul className="nav navbar-right top-nav">
       <li className="dropdown">
-        <a href="#" className="dropdown-toggle" data-toggle="dropdown">
+        <a href="/" className="dropdown-toggle" data-toggle="dropdown">
           <i className="fa fa-user" /> Sandeera <b className="caret" />
-          </a>
+        </a>
         <ul className="dropdown-menu">
           <li>
-            <a  href="#">
+            <a href="/">
               <i className="fa fa-fw fa-power-off" /> Log Out
             </a>
           </li>

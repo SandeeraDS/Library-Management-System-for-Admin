@@ -1,9 +1,9 @@
 import React from 'react';
 import { Router, Route, browserHistory } from 'react-router';
-import Book from '../Books/Books';
-import OverDue from '../OverDue/OverDue';
-import Users from '../Users/Users';
-import Assign from '../Assign/Assign';
+import Book from '../MainCategories/Books/Books';
+import OverDue from '../MainCategories/OverDue/OverDue';
+import Users from '../MainCategories/Users/Users';
+import Assign from '../MainCategories/Assign/Assign';
 import App from '../../containers/App'
 
 const Routing = () => {
@@ -22,4 +22,3 @@ const Routing = () => {
 
 export default Routing;
 
- 

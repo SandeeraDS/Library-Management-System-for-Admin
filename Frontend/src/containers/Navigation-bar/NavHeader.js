@@ -1,5 +1,5 @@
 import React from "react";
-import {Link} from 'react-router';
+import { Link } from 'react-router';
 
 const NavHeader = () => {
   return (
@@ -17,7 +17,6 @@ const NavHeader = () => {
       </button>
 
       <Link className="navbar-brand" to="/">
-        {" "}
         Library Admin
       </Link>
     </div>
