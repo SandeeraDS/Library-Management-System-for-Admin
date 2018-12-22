@@ -17,15 +17,18 @@ class CreateTable extends Component {
             columns: [
                 {
                     title: "Reg Id",
-                    data: "CustomerRegistartionNumber"
+                    data: "CustomerRegistartionNumber",
+                    render: function (data, type, customer) {
+                        return "<a href='/Users/" + customer.Id + "'>" + customer.CustomerRegistartionNumber + "</a>";
+                    }
                 },
                 {
                     title: "Name",
                     data: "Name"
                 },
                 {
-                    title:"Email",
-                    data:"Email"
+                    title: "Email",
+                    data: "Email"
                 }
             ]
         });

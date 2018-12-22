@@ -5,6 +5,7 @@ import OverDue from '../MainCategories/OverDue/OverDue';
 import Users from '../MainCategories/Users/Users';
 import Assign from '../MainCategories/Assign/Assign';
 import App from '../../containers/App'
+import SingleUser from '../MainCategories/Users/SingleUser/SingleUser';
 
 const Routing = () => {
     return (
@@ -14,6 +15,7 @@ const Routing = () => {
             <Route path="/Book" component={Book}></Route>
             <Route path="/Overdue" component={OverDue}></Route>
             <Route path="/Users" component={Users}></Route>
+            <Route path="/Users/:id" component={SingleUser}></Route>
             <Route path="/Assign" component={Assign}></Route>
         </Router>
 
