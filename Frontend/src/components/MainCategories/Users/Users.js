@@ -24,8 +24,9 @@ class Users extends Component {
   }
 
   formSaveHandler = () => {
-    alert("Adding Successfull")
+
     this.setState((prevState) => { return { showForm: !prevState.showForm } })
+    alert("Adding Successfull")
   }
 
 

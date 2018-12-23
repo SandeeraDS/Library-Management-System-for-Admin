@@ -36,7 +36,6 @@ class CreateTable extends Component {
 
 
     render() {
-        console.log(this.props.data)
         return (
             <div className="table-responsive"> <table id="example" className="display" width="100%"></table></div>
         );
