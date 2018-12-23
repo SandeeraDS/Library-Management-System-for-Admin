@@ -11,7 +11,7 @@ class Users extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      showForm: false
+      showForm: false,
     };
   }
 
@@ -27,6 +27,7 @@ class Users extends Component {
 
     this.setState((prevState) => { return { showForm: !prevState.showForm } })
     alert("Adding Successfull")
+    window.location.reload();
   }
 
 
